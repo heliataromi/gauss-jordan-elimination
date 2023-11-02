@@ -40,7 +40,7 @@ def gauss_jordan_elimination(A, b):
 
         # Check if the matrix is inconsistent
         if np.all(augmented_matrix[:, :-1][k] == 0) and augmented_matrix[k][-1] != 0:
-            print("پاسخ ندارد.")
+            print("The system is inconsistent and isn't solvable.")
             return None
 
         # Normalize the pivot row
